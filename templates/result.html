@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+    <link rel="stylesheet" type="text/css"  href="static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Spam Detector App
+		</div>
+		<h2>Spam Detector For SMS Messages</h2>
+		
+	</div>
+	</header>
+	<p style="color:#FFFFFF;font-size:20;text-align: center;"><b>Result !!!</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h2 style="color:#FF0000;text-align:center;font-size:50px">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:#7CFC00;text-align:center;font-size:50px">Ham (Not a Spam)</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
